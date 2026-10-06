@@ -2,394 +2,367 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <title>Kopi Komar</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Komar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    <header id="Beranda">
+<body class="font-sans bg-amber-50 text-gray-800">
 
-        <h1>
+    <header id="Beranda" class="bg-amber-800 text-white text-center p-8">
+        <h1 class="text-4xl font-bold">
             Kopi Komar
         </h1>
-
-        <p>
+        <p class="text-lg mt-2">
             Kopi lokal yang rasa nya mendunia
         </p>
-
     </header>
 
-    <nav>
-        <a href="#Beranda"> Beranda</a>
-        <a href="#Tentang"> TentangKami</a>
-        <a href="#Produk"> Produk</a>
-        <a href="#Galeri"> Galeri</a>
-        <a href="#Pemesanan"> Pemesanan</a>
-        <a href="#Kontak"> Kontak</a>
+    <nav class="flex flex-wrap justify-center gap-4 bg-amber-100 p-4">
+        <a href="#Beranda" class="text-amber-800 font-medium p-2 hover:text-amber-600">Beranda</a>
+        <a href="#Tentang" class="text-amber-800 font-medium p-2 hover:text-amber-600">Tentang Kami</a>
+        <a href="#Produk" class="text-amber-800 font-medium p-2 hover:text-amber-600">Produk</a>
+        <a href="#Galeri" class="text-amber-800 font-medium p-2 hover:text-amber-600">Galeri</a>
+        <a href="#Pemesanan" class="text-amber-800 font-medium p-2 hover:text-amber-600">Pemesanan</a>
+        <a href="#Kontak" class="text-amber-800 font-medium p-2 hover:text-amber-600">Kontak</a>
     </nav>
 
-    <hr>
-
     <main>
-        <section id="Tentang">
-            <h2>Tentang Kopi Komar</h2>
-            <img
-                src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=500&q=80"
-                alt="Biji kopi dan peralatan untuk proses roasting"
-                width="500"
-            >
-            <p>
-                <strong>Kopi Komar</strong> merupakan UMKM
-                yang bergerak di bidang kuliner minuman, khususnya pengolahan
-                dan penjualan biji kopi lokal Indonesia.
-            </p>
-            <p>
-                Kami menghadirkan berbagai pilihan kopi
-                <em>single origin</em> dari berbagai daerah di Indonesia.
-                Setiap biji kopi disangrai dalam skala rumahan
-                (<em>micro-roastery</em>) untuk menjaga kualitas, kesegaran,
-                dan karakter rasa dari setiap daerah asalnya.
-            </p>
-             <p>
-                Kopi Komar memiliki semangat untuk mengenalkan
-                kekayaan kopi Nusantara kepada masyarakat sekaligus mendukung
-                petani kopi lokal Indonesia.
-            </p>
-        </section>
-
-        <hr>
-
-        <section id="Produk">
-            <h2>Produk Kopi Kami</h2>
-            <p>
-                Berikut beberapa pilihan biji kopi
-                <em>single origin</em> yang tersedia di Kopi Komar.
-            </p>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Gambar</th>
-                        <th>Nama Produk</th>
-                        <th>Deskripsi Singkat</th>
-                        <th>Harga</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>
-                            <img
-                                src="https://images.unsplash.com/photo-1442512595331-e89e73853f31"
-                                alt="Biji Kopi Gayo Aceh"
-                                width="150"
-                            >
-                        </td>
-
-                        <td>Kopi Gayo Aceh</td>
-
-                        <td>
-                            Kopi Arabika dari dataran tinggi Gayo dengan
-                            karakter rasa yang seimbang, aroma rempah,
-                            dan sedikit rasa cokelat.
-                        </td>
-
-                        <td>Rp85.000 / 250 gram</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img
-                                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
-                                alt="Biji Kopi Toraja"
-                                width="150"
-                            >
-                        </td>
-
-                        <td>Kopi Toraja</td>
-
-                        <td>
-                            Kopi Arabika khas Toraja dengan cita rasa
-                            earthy, sedikit rempah, serta tingkat keasaman
-                            yang lembut.
-                        </td>
-
-                        <td>Rp90.000 / 250 gram</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img
-                                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd"
-                                alt="Biji Kopi Flores Bajawa"
-                                width="150"
-                            >
-                        </td>
-
-                        <td>Kopi Flores Bajawa</td>
-
-                        <td>
-                            Kopi Arabika dari Flores dengan karakter rasa
-                            cokelat, kacang, dan aroma rempah yang khas.
-                        </td>
-
-                        <td>Rp88.000 / 250 gram</td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-                    <tr>
-                        <td colspan="4">
-                            Harga dapat berubah sesuai ketersediaan dan
-                            musim panen kopi.
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-
-        <hr>
-
-        <section id="Galeri">
-            <h2>Galeri Komar</h2>
-
-            <figure>
+        <section id="Tentang" class="bg-white p-4 md:p-8">
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6">
                 <img
-                    src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
-                    alt="Secangkir kopi"
-                    width="300"
+                    src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=500&q=80"
+                    alt="Biji kopi dan peralatan untuk proses roasting"
+                    class="w-full md:w-1/2 rounded-lg border border-amber-200"
                 >
-                <figcaption>
-                    Secangkir kopi yang siap dinikmati.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="https://images.unsplash.com/photo-1447933601403-0c6688de566e"
-                    alt="Biji kopi pilihan"
-                    width="300"
-                >
-                <figcaption>
-                    Biji kopi lokal pilihan sebelum proses roasting.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd"
-                    alt="Proses penyajian kopi"
-                    width="300"
-                    height="200"
-                >
-                <figcaption>
-                    Kopi yang siap disajikan kepada pelanggan.
-                </figcaption>
-            </figure>
-
+                <div class="flex flex-col gap-4 md:w-1/2">
+                    <h2 class="text-2xl font-bold text-amber-800">Tentang Kopi Komar</h2>
+                    <p>
+                        <strong>Kopi Komar</strong> merupakan UMKM
+                        yang bergerak di bidang kuliner minuman, khususnya pengolahan
+                        dan penjualan biji kopi lokal Indonesia.
+                    </p>
+                    <p>
+                        Kami menghadirkan berbagai pilihan kopi
+                        <em>single origin</em> dari berbagai daerah di Indonesia.
+                        Setiap biji kopi disangrai dalam skala rumahan
+                        (<em>micro-roastery</em>) untuk menjaga kualitas, kesegaran,
+                        dan karakter rasa dari setiap daerah asalnya.
+                    </p>
+                    <p>
+                        Kopi Komar memiliki semangat untuk mengenalkan
+                        kekayaan kopi Nusantara kepada masyarakat sekaligus mendukung
+                        petani kopi lokal Indonesia.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <hr>
+        <section id="Produk" class="bg-amber-50 p-4 md:p-8">
+            <div class="max-w-4xl mx-auto flex flex-col gap-4">
+                <h2 class="text-2xl font-bold text-amber-800 text-center">Produk Kopi Kami</h2>
+                <p class="text-center">
+                    Berikut beberapa pilihan biji kopi
+                    <em>single origin</em> yang tersedia di Kopi Komar.
+                </p>
 
-        <section id="Pemesanan">
-            <h2>Formulir Pemesanan</h2>
-              <form method="POST" action="#">
+                <table class="w-full border border-amber-300">
+                    <thead>
+                        <tr class="bg-amber-800 text-white">
+                            <th class="border border-amber-200 p-2">Gambar</th>
+                            <th class="border border-amber-200 p-2">Nama Produk</th>
+                            <th class="border border-amber-200 p-2">Deskripsi Singkat</th>
+                            <th class="border border-amber-200 p-2">Harga</th>
+                        </tr>
+                    </thead>
 
-                <fieldset>
-                    <legend>Data Pelanggan</legend>
+                    <tbody>
+                        <tr class="hover:bg-amber-100">
+                            <td class="border border-amber-200 p-2 text-center">
+                                <img
+                                    src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=400&q=80"
+                                    alt="Biji Kopi Gayo Aceh"
+                                    class="w-32 mx-auto rounded"
+                                >
+                            </td>
+                            <td class="border border-amber-200 p-2 font-medium">Kopi Gayo Aceh</td>
+                            <td class="border border-amber-200 p-2">
+                                Kopi Arabika dari dataran tinggi Gayo dengan
+                                karakter rasa yang seimbang, aroma rempah,
+                                dan sedikit rasa cokelat.
+                            </td>
+                            <td class="border border-amber-200 p-2 text-center">Rp85.000 / 250 gram</td>
+                        </tr>
 
-                    <p>
-                        <label for="nama">Nama Lengkap:</label><br>
-                        <input
-                            type="text"
-                            id="nama"
-                            name="nama"
-                            required
-                        >
-                    </p>
+                        <tr class="hover:bg-amber-100">
+                            <td class="border border-amber-200 p-2 text-center">
+                                <img
+                                    src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80"
+                                    alt="Biji Kopi Toraja"
+                                    class="w-32 mx-auto rounded"
+                                >
+                            </td>
+                            <td class="border border-amber-200 p-2 font-medium">Kopi Toraja</td>
+                            <td class="border border-amber-200 p-2">
+                                Kopi Arabika khas Toraja dengan cita rasa
+                                earthy, sedikit rempah, serta tingkat keasaman
+                                yang lembut.
+                            </td>
+                            <td class="border border-amber-200 p-2 text-center">Rp90.000 / 250 gram</td>
+                        </tr>
 
-                    <p>
-                        <label for="email">Email:</label><br>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                        >
-                    </p>
-                </fieldset>
+                        <tr class="hover:bg-amber-100">
+                            <td class="border border-amber-200 p-2 text-center">
+                                <img
+                                    src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80"
+                                    alt="Biji Kopi Flores Bajawa"
+                                    class="w-32 mx-auto rounded"
+                                >
+                            </td>
+                            <td class="border border-amber-200 p-2 font-medium">Kopi Flores Bajawa</td>
+                            <td class="border border-amber-200 p-2">
+                                Kopi Arabika dari Flores dengan karakter rasa
+                                cokelat, kacang, dan aroma rempah yang khas.
+                            </td>
+                            <td class="border border-amber-200 p-2 text-center">Rp88.000 / 250 gram</td>
+                        </tr>
+                    </tbody>
 
-                <fieldset>
-                    <legend>Detail Pesanan</legend>
-
-                    <p>
-                        <label for="produk_pesanan">
-                            Pilih Produk:
-                        </label>
-                        <br>
-
-                        <select
-                            id="produk_pesanan"
-                            name="produk_pesanan"
-                        >
-                            <option value="gayo">
-                                Kopi Gayo Aceh
-                            </option>
-
-                            <option value="toraja">
-                                Kopi Toraja
-                            </option>
-
-                            <option value="flores">
-                                Kopi Flores Bajawa
-                            </option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <label for="jumlah">
-                            Jumlah Pesanan:
-                        </label>
-                        <br>
-
-                        <input
-                            type="number"
-                            id="jumlah"
-                            name="jumlah"
-                            min="1"
-                            required
-                        >
-                    </p>
-
-                    <p>
-                        <label>
-                            Metode Pengiriman:
-                        </label>
-                        <br>
-
-                        <input
-                            type="radio"
-                            id="reguler"
-                            name="pengiriman"
-                            value="reguler"
-                            checked
-                        >
-
-                        <label for="reguler">
-                            Reguler
-                        </label>
-
-                        <br>
-
-                        <input
-                            type="radio"
-                            id="ekspres"
-                            name="pengiriman"
-                            value="ekspres"
-                        >
-
-                        <label for="ekspres">
-                            Ekspres
-                        </label>
-                    </p>
-
-                    <p>
-                        <label for="pesan">
-                            Pesan Tambahan:
-                        </label>
-                        <br>
-
-                        <textarea
-                            id="pesan"
-                            name="pesan"
-                            rows="5"
-                            cols="40"
-                            placeholder="Tuliskan pesan atau permintaan khusus..."
-                        ></textarea>
-                    </p>
-
-                    <p>
-                        <input
-                            type="checkbox"
-                            id="persetujuan"
-                            name="persetujuan"
-                            required
-                        >
-
-                        <label for="persetujuan">
-                            Saya menyetujui syarat dan ketentuan
-                            pemesanan.
-                        </label>
-                    </p>
-
-                    <button type="submit">
-                        Kirim Pesanan
-                    </button>
-
-                </fieldset>
-
-            </form>    
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="border border-amber-200 p-2 text-center text-sm">
+                                Harga dapat berubah sesuai ketersediaan dan
+                                musim panen kopi.
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </section>
 
-        <section id="Kontak">
-            <h2>Kontak Kami</h2>
-             <p>
-                Jika memiliki pertanyaan mengenai produk atau ingin
-                melakukan pemesanan, silakan hubungi kami melalui:
-            </p>
+        <section id="Galeri" class="bg-white p-4 md:p-8">
+            <div class="max-w-4xl mx-auto flex flex-col gap-4">
+                <h2 class="text-2xl font-bold text-amber-800 text-center">Galeri Komar</h2>
 
-            <p>
-                Email:
-                <a href="mailto:kopikomar@gmail.com">
-                    kopikomar@gmail.com
-                </a>
-            </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <figure class="border border-amber-200 rounded-lg p-2">
+                        <img
+                            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80"
+                            alt="Secangkir kopi"
+                            class="w-full rounded"
+                        >
+                        <figcaption class="text-center text-sm mt-2 font-medium">
+                            Secangkir kopi yang siap dinikmati.
+                        </figcaption>
+                    </figure>
 
-            <p>
-                Telepon:
-                <a href="tel:+6281234567890">
-                    +62 812-3456-7890
-                </a>
-            </p>
+                    <figure class="border border-amber-200 rounded-lg p-2">
+                        <img
+                            src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&q=80"
+                            alt="Biji kopi pilihan"
+                            class="w-full rounded"
+                        >
+                        <figcaption class="text-center text-sm mt-2 font-medium">
+                            Biji kopi lokal pilihan sebelum proses roasting.
+                        </figcaption>
+                    </figure>
 
-            <p>
-                Media Sosial:
-                <a
-                    href="https://www.instagram.com/komar.indonesia?igsi=NTM0bG5lbjUwYTBu"
-                >
-                    Instagram Kopi Komar
-                </a>
-            </p>
+                    <figure class="border border-amber-200 rounded-lg p-2">
+                        <img
+                            src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80"
+                            alt="Proses penyajian kopi"
+                            class="w-full h-48 rounded"
+                        >
+                        <figcaption class="text-center text-sm mt-2 font-medium">
+                            Kopi yang siap disajikan kepada pelanggan.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
         </section>
 
-        <hr>
+        <section id="Pemesanan" class="bg-amber-50 p-4 md:p-8">
+            <div class="max-w-xl mx-auto flex flex-col gap-4">
+                <h2 class="text-2xl font-bold text-amber-800 text-center">Formulir Pemesanan</h2>
 
-        <section id="Multimedia">
-            <h2>Video Profil Komar</h2>
-            <p>
-                Simak video berikut untuk mengenal lebih dekat dunia
-                kopi dan proses pengolahannya.
-            </p>
+                <form method="POST" action="#" class="flex flex-col gap-4">
 
-            <video width="500" controls>
-                <source src="https://origon-eu.com/wp-content/uploads/2025/01/coffee.mp4" type="video/mp4">
-                Browser Anda tidak mendukung video.
-            </video>    
-                
+                    <fieldset class="border border-amber-300 rounded-lg p-4 flex flex-col gap-4">
+                        <legend class="font-bold text-amber-800 px-2">Data Pelanggan</legend>
+
+                        <div class="flex flex-col gap-1">
+                            <label for="nama" class="font-medium">Nama Lengkap:</label>
+                            <input
+                                type="text"
+                                id="nama"
+                                name="nama"
+                                required
+                                class="border border-gray-300 rounded p-2 focus:border-amber-600 focus:outline-none"
+                            >
+                        </div>
+
+                        <div class="flex flex-col gap-1">
+                            <label for="email" class="font-medium">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                class="border border-gray-300 rounded p-2 focus:border-amber-600 focus:outline-none"
+                            >
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="border border-amber-300 rounded-lg p-4 flex flex-col gap-4">
+                        <legend class="font-bold text-amber-800 px-2">Detail Pesanan</legend>
+
+                        <div class="flex flex-col gap-1">
+                            <label for="produk_pesanan" class="font-medium">
+                                Pilih Produk:
+                            </label>
+                            <select
+                                id="produk_pesanan"
+                                name="produk_pesanan"
+                                class="border border-gray-300 rounded p-2 focus:border-amber-600 focus:outline-none"
+                            >
+                                <option value="gayo">Kopi Gayo Aceh</option>
+                                <option value="toraja">Kopi Toraja</option>
+                                <option value="flores">Kopi Flores Bajawa</option>
+                            </select>
+                        </div>
+
+                        <div class="flex flex-col gap-1">
+                            <label for="jumlah" class="font-medium">
+                                Jumlah Pesanan:
+                            </label>
+                            <input
+                                type="number"
+                                id="jumlah"
+                                name="jumlah"
+                                min="1"
+                                required
+                                class="border border-gray-300 rounded p-2 focus:border-amber-600 focus:outline-none"
+                            >
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label class="font-medium">
+                                Metode Pengiriman:
+                            </label>
+
+                            <div class="flex items-center gap-2">
+                                <input
+                                    type="radio"
+                                    id="reguler"
+                                    name="pengiriman"
+                                    value="reguler"
+                                    checked
+                                >
+                                <label for="reguler">Reguler</label>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <input
+                                    type="radio"
+                                    id="ekspres"
+                                    name="pengiriman"
+                                    value="ekspres"
+                                >
+                                <label for="ekspres">Ekspres</label>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-1">
+                            <label for="pesan" class="font-medium">
+                                Pesan Tambahan:
+                            </label>
+                            <textarea
+                                id="pesan"
+                                name="pesan"
+                                rows="5"
+                                placeholder="Tuliskan pesan atau permintaan khusus..."
+                                class="border border-gray-300 rounded p-2 focus:border-amber-600 focus:outline-none"
+                            ></textarea>
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <input
+                                type="checkbox"
+                                id="persetujuan"
+                                name="persetujuan"
+                                required
+                            >
+                            <label for="persetujuan">
+                                Saya menyetujui syarat dan ketentuan pemesanan.
+                            </label>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="w-full bg-amber-800 text-white font-semibold p-2 rounded-lg hover:bg-amber-700 active:bg-amber-900"
+                        >
+                            Kirim Pesanan
+                        </button>
+                    </fieldset>
+
+                </form>
+            </div>
+        </section>
+
+        <section id="Kontak" class="bg-white p-4 md:p-8 text-center">
+            <div class="max-w-4xl mx-auto flex flex-col gap-2">
+                <h2 class="text-2xl font-bold text-amber-800">Kontak Kami</h2>
+                <p>
+                    Jika memiliki pertanyaan mengenai produk atau ingin
+                    melakukan pemesanan, silakan hubungi kami melalui:
+                </p>
+
+                <p>
+                    Email:
+                    <a href="mailto:kopikomar@gmail.com" class="text-amber-800 font-medium hover:text-amber-600">
+                        kopikomar@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    Telepon:
+                    <a href="tel:+6281234567890" class="text-amber-800 font-medium hover:text-amber-600">
+                        +62 812-3456-7890
+                    </a>
+                </p>
+
+                <p>
+                    Media Sosial:
+                    <a
+                        href="https://www.instagram.com/komar.indonesia?igsi=NTM0bG5lbjUwYTBu"
+                        class="text-amber-800 font-medium hover:text-amber-600"
+                    >
+                        Instagram Kopi Komar
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <section id="Multimedia" class="bg-amber-50 p-4 md:p-8 text-center">
+            <div class="max-w-xl mx-auto flex flex-col gap-4">
+                <h2 class="text-2xl font-bold text-amber-800">Video Profil Komar</h2>
+                <p>
+                    Simak video berikut untuk mengenal lebih dekat dunia
+                    kopi dan proses pengolahannya.
+                </p>
+
+                <video controls class="w-full rounded-lg border border-amber-200">
+                    <source src="https://origon-eu.com/wp-content/uploads/2025/01/coffee.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video.
+                </video>
+            </div>
         </section>
     </main>
 
-    <hr>
-
-    <footer>
-        <p>
-            &copy; 2026 Kopi Komar.
-            Semua Hak Cipta Dilindungi.
-        </p>
-        <p>
-            Dibuat Oleh : <strong>Achmad Tifli</strong>
-        </p>
+    <footer class="bg-amber-800 text-white text-center p-4">
+        <p>&copy; 2026 Kopi Komar. Semua Hak Cipta Dilindungi.</p>
+        <p>Dibuat Oleh : <strong>Achmad Tifli</strong></p>
     </footer>
+
 </body>
 </html>
-
-
