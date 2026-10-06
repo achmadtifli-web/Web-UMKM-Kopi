@@ -1,0 +1,27 @@
+# Sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dependensi & build (jika nanti memakai npm)
+node_modules/
+dist/
+build/
+package-lock.json
+
+# Log & environment
+*.log
+npm-debug.log*
+.env
+.env.*
+
+# Berkas sementara & cadangan
+*.tmp
+*.bak
+*.orig.*
